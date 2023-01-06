@@ -1,4 +1,5 @@
 # PS Plus 게임 카탈로그 만료 예정인 게임 찾기 프로그램
+
 This program extracts the expiry date and list of the game catalog of PS Plus
 
 ## 목적
@@ -13,3 +14,6 @@ PS Plus 게임 카탈로그는 영구적으로 등록되는 게임이 아니다.
 1. 웹 스크래핑으로 PS Store 게임 카탈로그([https://store.playstation.com/ko-kr/category/05a2d027-cedc-4ac0-abeb-8fc26fec7180/1](https://store.playstation.com/ko-kr/category/05a2d027-cedc-4ac0-abeb-8fc26fec7180/1))의 정보를 수집해 모든 게임 카탈로그를 찾고, 그 중 만료 예정일을 찾는 것이 핵심이다.
 2. 수집한 정보를 웹페이지에서 쉽게 확인할 수 있도록 만든다.
 
+## 화면
+
+![image](https://user-images.githubusercontent.com/61766907/210938004-f3727b08-2577-4d10-b97f-f101d382e316.png)
