@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../static/index.css" />
+    
+    <title>{{title}}</title>
+</head>
+
+<body class="body-index">
+    <h1>{{title}}</h1>
+
+    <form name="frm" action="/search" method="get">
+        <input type="hidden" name="keyword" value="" />
+        <div>
+            <!-- <input type="text" name="keyword" placeholder="input a job and press enter" required> -->
+            <button type="button" class="custom-btn btn-index" onClick="clickBtn('all');"><span>전체</span></button>
+            <button type="button" class="custom-btn btn-index" onClick="clickBtn('expired');"><span>만료예정</span></button>
+        </div>
+    </form>
+
+    <script type="text/javascript">
+        const f = document.frm;
+
+        function clickBtn(keyword) {
+            f.keyword.value = keyword;
+            f.submit();
+        }
+    </script>
+
+</body>
+
+</html>
