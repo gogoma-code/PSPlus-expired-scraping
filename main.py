@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 from extractors.ps_expired import extract_ps_expired_paging
 
-app = Flask("jobScrapper")
+app = Flask("PSPlusScrapper")
 
 title = "PS Plus Game Catalog"
 

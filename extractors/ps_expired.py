@@ -17,7 +17,7 @@ def extract_ps_expired_paging():
         last_page_value = int(page_button_list[len(page_button_list) - 1]["value"])
         
         for i in range(last_page_value):
-            extract_ps_expired(games, i+1)
+            games = extract_ps_expired(games, i+1)
 
         # 게임 이름으로 정렬
         games =  sorted(games, key=lambda d: d['game_name'])
@@ -79,4 +79,4 @@ def extract_ps_expired(games, page):
                 }
                 games.append(game)
         
-    return ""
+    return games
